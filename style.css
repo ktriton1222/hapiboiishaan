@@ -1,0 +1,133 @@
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Source Code Pro', monospace;
+    background-color: rgb(25, 25, 25);
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+   margin: 30%;
+   justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+li:hover{
+    color: rgba(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    
+}
+
+li{
+    padding: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(25, 25, 25);
+    border-radius: 1px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+    margin: 10px;
+    flex: 1;
+    
+}
+
+
+
+.learn-more{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 11em;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: rgb(25, 25, 25);
+}
+
+.text{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    color: rgb(25, 25, 25);
+}
+
+.learn-more:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(25, 25, 25);
+}
+
+.line{
+    position: relative;
+    top: 50%;
+    width: 10em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+
+}
+
+
+.anim-typewriter{
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 1s steps(40) infinite normal;
+}
+
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 10em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+    
+}
+
